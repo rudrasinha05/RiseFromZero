@@ -1,0 +1,155 @@
+# Rise From Zero — machine-readable high-level handoff
+# Version: requirements-snapshot-2026-11-12
+# All CONFIRMED fields represent discussed intent, not built features.
+# Unspecified fields intentionally remain null.
+project:
+  title: "Rise From Zero"
+  genre: "realistic story-driven open-world street racing"
+  phase: "pre-production documentation"
+  developer_goal: "tested playable Windows EXE and installer"
+  implementation_started: false
+  docs: "../README.md"
+  requirements_reference: "../docs/12-REQUIREMENT-TRACEABILITY.md"
+
+story:
+  core_beats:
+    - "two poor childhood friends"
+    - "learn driving and mechanics together in a garage"
+    - "gain racing fame together"
+    - "love interest accompanies protagonist"
+    - "friend betrays protagonist; he is sent to prison"
+    - "betrayer builds racing empire while protagonist is incarcerated"
+    - "release: protagonist restarts career from zero"
+    - "climbs the rival hierarchy, expands garage and car collection"
+    - "confronts former friend and racing empire"
+    - "performance/progress/action-influenced ending variations"
+  main_character_names: null
+  betrayal_mechanism: null
+  prison_duration: null
+  exact_ending_branches: null
+  girlfriend:
+    intro_loading_presence: true
+    guides_player: true
+    continues_loving_protagonist: true
+    pressured_by_antagonist: true
+    secretly_supports_comeback: true
+    reacts_to_race_performance: true
+    name: null
+  narrative_constraints:
+    no_race_questionnaire: true
+    short_and_long_cutscenes: true
+    contextual_post_race_reactions: true
+    gameplay_driven_story_branches: true
+
+career:
+  rival_rank_count_planned: 15
+  per_rank_fixed_expert_races: 5
+  min_expert_race_wins_to_advance: 3
+  all_defined_boss_challenges_required: true
+  boss_count: null
+  rank_direction: null
+  event_scheduler:
+    expert_selects_time: true
+    expert_selects_location: true
+    day_night_and_weather_vary: true
+
+world:
+  connected_city_count_planned: 5
+  working_regions: ["Old City", "Metro City", "Industrial City", "Mountain City", "Luxury City"]
+  region_names_final: false
+  drivable_features:
+    - "intercity highways"
+    - "village and service roads"
+    - "urban alleys and shortcuts"
+    - "mountain and valley roads"
+    - "forest and dirt tracks"
+    - "lake shores and reservoirs"
+    - "dam roadway and approach roads"
+    - "bridges and tunnels where physically plausible"
+  interactive_geography: true
+  weather_affects_driving: true
+  time_and_area_affect_traffic: true
+  pursuit_hotspots_and_breakers: true
+  approximate_area_km2_estimate: [100, 250]
+  area_estimate_is_final_spec: false
+
+vehicles:
+  target_realistic_simulation: true
+  credible_jump_and_landing: true
+  wet_road_grip_effect: true
+  cockpit_instruments_and_steering: true
+  per_car_interior: true
+  cameras: ["cockpit", "hood", "bumper", "chase", "cinematic"]
+  gearbox_modes: ["automatic", "manual"]
+  manual_clutch_optional: true
+  input_devices: ["keyboard", "gamepad", "joystick"]
+  input_fully_remappable: true
+  requested_keyboard_defaults:
+    shift_up: "Left Shift"
+    shift_down: "Right Shift"
+
+customization:
+  categories:
+    - engine
+    - gearbox
+    - nitrous
+    - turbo
+    - exhaust
+    - ECU
+    - tires
+    - brakes
+    - suspension
+    - rims
+    - spoiler
+    - hood
+    - body_kit
+    - paint_and_livery
+    - lights
+    - interior
+  tier_families: ["Basic", "Advanced", "Pro", "Ultimate"]
+  each_part_has_own_sublevels: true
+  pro_and_ultimate_engine_multiple_variants: true
+  indicative_pro_engine_choices: "2 to 3 or more distinct options"
+  indicative_ultimate_engine_choices: "2 to 3 or more distinct options"
+  nitrous_has_multiple_levels: true
+  gearbox_has_multiple_levels: true
+  max_earned_rank_unlocks_eligible_options_not_free_parts: true
+  parts_require_purchase_and_car_compatibility: true
+  desired_car_examples_subject_to_licensing:
+    - "Maserati"
+    - "Rolls-Royce Ghost"
+    - "Range Rover / Land Rover"
+    - "Pagani"
+    - "Bugatti"
+    - "Ferrari"
+  garage:
+    starts_small: true
+    may_expand_with_earned_resources: true
+    spend_is_player_choice: true
+
+police:
+  heat: true
+  bounty: true
+  pursuit_breakers:
+    - "billboards"
+    - "water tanks"
+    - "selected construction structures"
+  avoid_massive_unrealistic_building_or_dam_collapse: true
+  busted_options: ["court", "fine", "bail/release", "possible jail"]
+  interrupted_race_may_require_retry: true
+  preserve_campaign_progress_after_bust: true
+
+engineering_handoff:
+  engine_selected: null
+  suggested_engine_for_evaluation: "Unreal Engine (candidate, not approved)"
+  repo_phase: "docs only"
+  use_AGO_in_future_if_verified: true
+  task_completion_requires:
+    - "source commit"
+    - "reproducible build"
+    - "functional tests"
+    - "independent QA evidence"
+    - "playable artifact when relevant"
+  target_installed_size_gb_estimate: [150, 300]
+  target_size_is_hard_requirement: false
+  target_delivery_date: null
