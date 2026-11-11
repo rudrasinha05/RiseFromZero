@@ -55,6 +55,8 @@ flowchart TD
 | [09 — Tech, data & AGO handoff](docs/09-TECH-AGO-HANDOFF.md) | Architecture candidate, data schemas, agent handoff |
 | [10 — Milestones & acceptance](docs/10-BUILD-ROADMAP-QA.md) | Vertical slice, staged delivery, QA checklist |
 | [11 — Decisions & unanswered questions](docs/11-DECISIONS-OPEN-QUESTIONS.md) | Keep speculation separate from the owner's words |
+| [12 — Requirement traceability](docs/12-REQUIREMENT-TRACEABILITY.md) | Requirement IDs with exact design/test coverage |
+| [AGO-readable blueprint](design-data/game-blueprint.yaml) | Machine-readable high-level requirements and explicit unknowns |
 
 ## One-page gameplay flow
 Start story → unlock an eligible car / garage → receive a specific expert's timed and placed race challenge → travel through the open world → choose permitted tune, paint, gear mode, camera and controls → race with realistic handling, traffic, day/night and police pressure → finish / lose / get busted → resolve results and legal consequences → award cash, bounty and reputation as defined → trigger a short/long reaction scene based on *observed performance* → unlock progression if required races and boss conditions are satisfied → purchase compatible vehicle/part upgrades or expand garage voluntarily → repeat across city regions → face the antagonist and reach a consequence-driven finale.
